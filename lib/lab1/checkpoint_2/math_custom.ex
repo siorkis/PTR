@@ -57,7 +57,8 @@ defmodule MathCustom do
     if List.first(list) == 0 do
       list = List.delete(list, 0)
       if Enum.member?(list, 0) do
-        smallest_number(List.first(list), List.last(list))
+        # smallest_number(List.first(list), List.last(list))
+        String.to_integer(Integer.to_string(List.last(list))<>"0"<>"0")
       else
         Integer.undigits(List.insert_at(list, 1, 0))
       end
@@ -66,17 +67,17 @@ defmodule MathCustom do
     end
   end
 
-  def smallest_number(n1, n2) do
-    list = Enum.sort([n1, n2], :asc)
-    if List.first(list) == 0 do
-      list = List.delete(list, 0)
-      if Enum.member?(list, 0) do
-        List.first(list)
-      else
-        List.last(list)
-      end
-    end
-  end
+  # def smallest_number(n1, n2) do
+  #   list = Enum.sort([n1, n2], :asc)
+  #   if List.first(list) == 0 do
+  #     list = List.delete(list, 0)
+  #     if Enum.member?(list, 0) do
+  #       List.first(list)
+  #     else
+  #       List.last(list)
+  #     end
+  #   end
+  # end
 
 
 end

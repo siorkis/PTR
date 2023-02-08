@@ -86,7 +86,7 @@ defmodule ListCustom do
   end
 
   @doc"""
-  Function `translator/1` that with given a dictionary, would translate a sentence.
+  Function `translator/2` that with given a dictionary, would translate a sentence.
   ## Example
   iex> dict = [mama: "mother", papa: "father"]
   iex> string = " mama is with papa "
@@ -262,7 +262,7 @@ defmodule ListCustom do
   def letters_combinations(""), do: [""]
 
   @doc"""
-  Function `letters_combinations/2` with given a string of digits from 2 to 9, would return all
+  Function `letters_combinations/1` with given a string of digits from 2 to 9, would return all
   possible letter combinations that the number could represent.
   ## Example
   iex> ListCustom.letters_combinations(("23"))
