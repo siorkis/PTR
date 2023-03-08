@@ -47,7 +47,7 @@ defmodule MathCustom do
   iex> MathCustom.smallest_number(0, 4, 3)
   304
   iex> MathCustom.smallest_number(0, 0, 3)
-  3
+  300
   iex> MathCustom.smallest_number(0, 0, 0)
   0
   """

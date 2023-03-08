@@ -1,5 +1,7 @@
-Code.require_file("math_custom.ex")
-Code.require_file("list_custom.ex")
+# Code.require_file("math_custom.ex")
+import MathCustom
+import ListCustom
+# Code.require_file("list_custom.ex")
 
 IO.inspect(MathCustom.is_prime(1))
 IO.inspect(MathCustom.is_prime(2))
@@ -52,7 +54,7 @@ IO.inspect(ListCustom.longest_common_prefix(list))
 list = ["alpha" , "beta" , "gamma"]
 IO.inspect(ListCustom.longest_common_prefix(list))
 
-IO.inspect(ListCustom.to_roman(13))
+IO.inspect(ListCustom.to_roman(999))
 
 IO.inspect(ListCustom.factorize(42))
 

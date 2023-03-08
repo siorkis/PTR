@@ -326,7 +326,7 @@ defmodule ListCustom do
       integer  when integer >= 500 ->  to_roman_core(integer-500, str_roman <> "D")
       integer  when integer >= 400 ->  to_roman_core(integer-400, str_roman <> "CD")
       integer  when integer >= 100 ->  to_roman_core(integer-100, str_roman <> "C")
-      integer  when integer >= 90 ->  to_roman_core(integer-90, str_roman <> "xc")
+      integer  when integer >= 90 ->  to_roman_core(integer-90, str_roman <> "XC")
       integer  when integer >= 50 ->  to_roman_core(integer-50, str_roman <> "L")
       integer  when integer >= 40 ->  to_roman_core(integer-40, str_roman <> "XL")
       integer  when integer >= 10 ->  to_roman_core(integer-10, str_roman <> "X")
