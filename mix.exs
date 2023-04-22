@@ -30,7 +30,7 @@ defmodule Ptr.MixProject do
       {:jason, "~> 1.4"},
       {:plug, "~> 1.14"},
       {:poison, "~> 5.0"},
-      {:plug_cowboy, "~> 2.6"}
+      {:plug_cowboy, "~> 2.6"},
     ]
   end
 end
